@@ -9,6 +9,7 @@ import javax.validation.constraints.NotEmpty;
 
 @Data
 public class UserReq {
+    private Long id;
     @NotBlank
     private String username;
     @NotBlank
