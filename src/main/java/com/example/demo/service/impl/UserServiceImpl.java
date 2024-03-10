@@ -50,7 +50,14 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
 
     @Override
     public int modifyById(User userReq) {
+
         return userMapper.updateById(userReq);
+    }
+
+    @Override
+    public int getNumber() {
+        System.out.println("get number");
+        return 0;
     }
 
     @Override

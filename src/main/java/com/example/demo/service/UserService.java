@@ -12,5 +12,6 @@ import com.example.demo.vo.UserVo;
 public interface UserService extends IService<User> {
     UserVo selectById(Long userId);
     int modifyById(User userReq);
+    int getNumber();
     void add(String username, String phone, List<String> features);
 }
